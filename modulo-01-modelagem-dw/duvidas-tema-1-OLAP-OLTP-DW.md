@@ -313,3 +313,81 @@ A tabela fato sem dimensões é um número sem contexto. A dimensão sem fato é
 | **Dimensão (Floco de Neve)** | Normalizada — exceção para dimensões muito grandes |
 
 ---
+
+> Com a busca das respostas das duvidas acima, outroas surgiram alem das de desdobramento. Segue abaixo as demais duvidas e suas respectivas respotas.
+
+
+## 11. Como a busca funciona num banco NoSQL?
+
+**Dúvida:** Se eu buscar informações de um cliente X, ele vai buscar em todos os arquivos se tem o campo e o valor que procuro. Não acho isso performático — um banco relacional ou colunar seria melhor. Em que casos se usa NoSQL então?
+
+**Resposta:**
+
+Sem índice, sim — o banco varre todos os documentos (*collection scan*), o que é lento. Com índices criados sobre os campos mais consultados, a busca é rápida.
+
+Mas o ponto principal é que o NoSQL foi criado para resolver **outros problemas**, não os mesmos que o relacional resolve.
+
+O banco relacional escala **verticalmente** — você melhora a máquina. Chega um limite físico e financeiro. O NoSQL foi criado por empresas como Google, Amazon e Facebook para escalar **horizontalmente** — adicionando mais máquinas — e lidar com volumes e velocidades que o relacional não aguentava.
+
+> No relacional você modela os dados e depois consulta.  
+> No NoSQL você **modela pensando nas consultas que vai fazer**.
+
+---
+
+## 12. Quais são os casos reais de uso do NoSQL?
+
+**Dúvida:** Na prática, quando se usa NoSQL? Tem exemplos reais?
+
+**Resposta:**
+
+| Caso | Exemplo real | Motivo |
+|---|---|---|
+| Feed de redes sociais | Facebook, Twitter/X | Volume absurdo de escrita, campos variáveis por post |
+| Catálogo de produtos | Amazon | Tênis tem atributos completamente diferentes de um livro |
+| Logs e monitoramento | Netflix, Uber | Volume imenso, estrutura variável, busca por texto |
+| Sessões de usuário | Qualquer site com login | Redis mantém sessão em memória — ultra-rápido |
+| IoT — sensores | Fábricas, dispositivos | Leituras a cada segundo, campos diferentes por sensor |
+| Geolocalização em tempo real | Uber, iFood | MongoDB e Redis têm suporte nativo a queries geoespaciais |
+
+O padrão comum em todos: **volume alto de escrita**, **schema variável**, **necessidade de escala horizontal** ou **latência baixa é crítica**.
+
+---
+
+## 13. Quando usar NoSQL vs Relacional?
+
+**Dúvida:** Então quando tenho um cenário difícil de padronizar, ou por conta do alto volume de dados, o melhor uso seria NoSQL?
+
+**Resposta:**
+
+Quase isso — são dois critérios independentes que podem aparecer juntos ou separados:
+
+| Situação | Recomendação |
+|---|---|
+| Schema imprevisível/variável | NoSQL |
+| Volume alto + escrita intensa | NoSQL |
+| Os dois juntos | NoSQL com certeza |
+| Schema fixo + consultas analíticas | Relacional ou Colunar |
+
+**Atenção:** volume alto sozinho não justifica NoSQL. Bilhões de transações financeiras têm schema fixo e exigem consistência total — relacional ou colunar ainda é a escolha certa nesses casos.
+
+A pergunta que guia a decisão na prática:
+
+> *"Meus dados têm estrutura previsível e eu preciso de consistência forte?"*  
+> Sim → Relacional ou Colunar  
+> Não → NoSQL merece consideração
+
+**Referência de tecnologias NoSQL:**
+
+| Banco | Tipo | Caso de uso típico |
+|---|---|---|
+| MongoDB | Documento | Catálogos, perfis, conteúdo |
+| Redis | Chave-valor | Cache, sessões, filas |
+| Elasticsearch | Busca/texto | Logs, full-text search |
+| InfluxDB | Série temporal | IoT, métricas |
+| Cosmos DB (Azure) | Multi-modelo | Aplicações distribuídas globalmente |
+
+---
+
+
+
+---
