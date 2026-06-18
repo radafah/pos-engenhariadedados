@@ -108,5 +108,3 @@ Quando a dimensão é **muito grande e com muita redundância** — por exemplo,
 Na prática, o Floco de Neve é exceção. O mercado prefere a Estrela pela performance e simplicidade de consulta.
 
 ---
-
-*Documento gerado a partir das aulas de Modelagem e Arquitetura de Data Warehouse — Tema 2.*
