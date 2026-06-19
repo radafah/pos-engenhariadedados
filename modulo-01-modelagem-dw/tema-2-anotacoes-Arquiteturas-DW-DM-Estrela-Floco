@@ -14,6 +14,11 @@
 
 ## Anotações
 
+### Conceito
+
+<img src="https://cetax.com.br/wp-content/uploads/2022/03/data-warehouse2.gif" alt="Fluxograma do DW" width="500">
+
+
 ### Arquiteturas de DW
 
 Existem três grandes abordagens arquiteturais:
@@ -51,6 +56,10 @@ Fonte → DM
 - **Estrela** 
 - **Floco de Neve**
 
+### Data Lake
+
+- É um repósitorio com todos os dados brutos de uma empresa, sem tratamento. É como se guardasse todo o historico para ser ou não usado em algum momento.
+
 ---
 
 ## Dúvidas Abertas
@@ -59,6 +68,15 @@ Fonte → DM
 2. Quais exemplos práticos dessas arquiteturas? Por exemplo, m em camadas tem a camada de dados brutos — não seria o mesmo que a monolítica? Como diferenciar sendo que elas parecem se cruzar?
 3. Em qual cenário se aplicaria o DM independente?
 4. Na modelagem de Floco de Neve, em qual situação real ela seria preferível à Estrela?
+5. Quais são as ferramentas ditas para "Business Inteligence"?
+6. De que forma o DW se integrou as tecnologias de Big Data?
+7. Qual o conceito de Datalke? Como se diferencia do DW?
+
+---
+
+## Pesquisar
+
+-**REDSHIFT**: é um dos maiores DW em nuvem do mundo e pertence a Amazon. Entender melhor como ele funciona.
 
 ---
 
@@ -67,6 +85,7 @@ Fonte → DM
 - [ ] Resolver as dúvidas abertas e registrar no arquivo de dúvidas do tema 2
 - [ ] Estudar exemplos práticos das três arquiteturas
 - [ ] Aprofundar diferenças entre DM dependente e independente
+- [ ] Assistir á aulas em video
 
 ---
 
