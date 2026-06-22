@@ -18,6 +18,7 @@
 
 <img src="https://cetax.com.br/wp-content/uploads/2022/03/data-warehouse2.gif" alt="Fluxograma do DW" width="500">
 
+Staging Area: area de preparação dos dados. Onde acontece o ETL, por exemplo.
 
 ### Arquiteturas de DW
 
@@ -33,6 +34,16 @@ Existem três grandes abordagens arquiteturais:
 - Google BigQuery
 - Snowflake
 
+## Data Mart
+
+São orientados a assuntos (financeiro, marketing, RH, DP, Juridico, etc).
+É uma sibdivisão do Data Warehouse.
+Tem 2 pontos principais
+- Foco Especifico
+- Acesso Rápido
+
+Eles podem ser Dependentes ou Independentes:
+
 ### Data Mart Dependente
 
 ```
@@ -41,6 +52,7 @@ Fonte → DW → DM
 
 - Dados originam do DW corporativo
 - Garante consistência e conceitos bem definidos entre os Data Marts
+- Consistencia de dados e integração centralizada.
 
 ### Data Mart Independente
 
@@ -50,17 +62,34 @@ Fonte → DM
 
 - Dados vêm direto da fonte, sem passar pelo DW
 - Pode gerar problemas de consistência e divergência de conceitos entre áreas
+- Flexibilidade e rapidez na implementação.
+Porém, os dados podem acabar sendo aplicado de forma diferente de outras areas da empresa. Por cada uma trabalhar de uma forma, e ter visões diferentes sobre o mesmo assunto.
 
 ### Modelagens
 
-- **Estrela** 
+- **Estrela**
+Modelagem de dados no Esquema Estrela é composto por uma tabela da to (quantitativo) conectada a varias dimensões (informaçãoes contextuais).
+
 - **Floco de Neve**
+No Esquema Floco de Neve as tabelas dimensão são normalizadas em multiplas menores.
+
+Ou seja, enquanto na estrela, numa dimensão eu ja tenho a descrição de informações como fornecedor e categoria, na Floco de Neve, essas informações são feitas em outras dimensões. Dessa forma, eu tenho a categoria ou o fornecedor cadastrado apenas uma vez, e não varias, evitando assim a reduncia e economizando espaço.
+
 
 ### Data Lake
 
-- É um repósitorio com todos os dados brutos de uma empresa, sem tratamento. É como se guardasse todo o historico para ser ou não usado em algum momento.
+É um repósitorio com todos os dados brutos de uma empresa, sem tratamento. É como se guardasse todo o historico para ser ou não usado em algum momento.
 
 ---
+
+### Projeto de Modelagem de Dados
+
+Quando estivermos em um projeto podemos analisar o processo em 4 etapas
+
+1. Entender os dados disponiveis
+2. Escolher o esquema a ser estruturado
+3. Estruturar no esquema, criando as fatos e dimensões
+4. Analisando e Dimensionando os dados com ferramentas de BI
 
 ## Dúvidas Abertas
 
