@@ -1,0 +1,95 @@
+# Anotações — Ferramentas e Tecnologias para Data Warehouse
+
+> Tema 3 — Anotações de aula e desdobramentos do estudo.
+
+---
+
+## Conceitos Centrais
+
+- **ETL** — processo de Extração, Transformação e Carga dos dados
+- **OLAP** — tecnologia para consulta analítica estruturada de dados
+- **Data Mining** — área voltada a descobrir correlações, tendências e comportamentos nos dados
+- **KDD** — Knowledge Discovery in Databases, área cujo objetivo é transformar dados em conhecimento
+- **Visualização de Dados** — transformar dados em informações compreensíveis
+
+---
+
+## Anotações
+
+### ETL (Extract | Transform | Load)
+
+Processo de três etapas para mover e preparar dados:
+
+- **Extract (Extrair):** coleta dos dados nas fontes de origem
+- **Transform (Transformar):** limpeza, padronização e enriquecimento dos dados
+- **Load (Carregar):** carga dos dados no destino (DW)
+
+O **Load** pode ser de dois tipos:
+- **Full:** carrega todos os dados do zero a cada execução
+- **Incremental:** carrega apenas os dados novos ou alterados desde a última carga
+
+---
+
+### OLAP
+
+Tecnologia voltada para consulta analítica estruturada de dados. Principais ferramentas do mercado:
+
+- Microsoft SQL Server Analysis Services
+- SAP BW
+- Oracle OLAP
+
+---
+
+### OLAP x Data Mining
+
+| | OLAP | Data Mining |
+|---|---|---|
+| Foco | Consulta estruturada de dados | Descoberta de padrões ocultos |
+| O que faz | Agrega, compara e cruza dados conhecidos | Busca correlações, tendências e comportamentos |
+| Tipo de análise | Tradicional — responde perguntas definidas | Exploratória — descobre o que não é óbvio |
+
+---
+
+### KDD — Knowledge Discovery in Databases
+
+Área cujo objetivo é transformar dados em conhecimento. O Data Mining é o processo central dentro do KDD.
+
+---
+
+### Ferramentas de Data Mining
+
+- RapidMiner
+- SAS Enterprise Miner
+
+---
+
+### Visualização de Dados
+
+Transformar dados em informações compreensíveis para tomada de decisão.
+
+Principais ferramentas:
+
+- **Power BI** (Microsoft)
+- **Tableau** (tempo real?)
+- **Google Data Studio**
+
+---
+
+## Dúvidas Abertas
+
+1. O que exatamente é o KDD? Como ele funciona? É uma técnica, conceito ou área?
+2. Como aplicamos o Data Mining no dia a dia?
+3. O Tableau trabalha com tempo real? É uma vantagem em cima do Power BI?
+4. Definir melhor o conceito de: ETL, OLAP, Data Mining e Ferramentas de Visualização de Dados
+
+---
+
+## Próximos Passos
+
+- [ ] Resolver as dúvidas abertas e registrar no arquivo de dúvidas do tema 3
+- [ ] Aprofundar a diferença entre OLAP e Data Mining na prática
+- [ ] Pesquisar casos de uso reais de Data Mining no contexto corporativo
+
+---
+
+*Anotações registradas manualmente em aula e transcritas para este repositório.*
