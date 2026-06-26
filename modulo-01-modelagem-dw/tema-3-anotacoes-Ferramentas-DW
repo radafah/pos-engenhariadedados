@@ -34,6 +34,7 @@ Ferramentas populares de **ETL**
 - TALEND
 - INFORMATICA POWERCENTER
 - APACHE NIFI
+- PENTAHO BI
 
 ---
 
@@ -67,6 +68,16 @@ Tecnologia voltada para consulta analítica estruturada de dados. Principais fer
 
 - RapidMiner
 - SAS Enterprise Miner
+- WEKA (open-souce)
+
+---
+
+### Tenicas Comuns no Data Mining
+
+- Classificação
+- Regressão
+- Clusterização (agrupamentos)
+- Analise de Associação
 
 ---
 
