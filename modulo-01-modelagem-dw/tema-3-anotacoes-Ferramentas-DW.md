@@ -109,6 +109,4 @@ Principais ferramentas:
 - [ ] Aprofundar a diferença entre OLAP e Data Mining na prática
 - [ ] Pesquisar casos de uso reais de Data Mining no contexto corporativo
 
----
 
-*Anotações registradas manualmente em aula e transcritas para este repositório.*
