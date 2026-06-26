@@ -16,6 +16,8 @@
 
 ## Anotações
 
+Ter diferentes fontes de dados trazem diferentes perspectivas (operacionais, historicos, tempo real, etc). Isso melhora a qualidade da analise e permite ter uma visão holistica do negocio.
+
 ### ETL (Extract | Transform | Load)
 
 Processo de três etapas para mover e preparar dados:
@@ -27,6 +29,11 @@ Processo de três etapas para mover e preparar dados:
 O **Load** pode ser de dois tipos:
 - **Full:** carrega todos os dados do zero a cada execução
 - **Incremental:** carrega apenas os dados novos ou alterados desde a última carga
+
+Ferramentas populares de **ETL**
+- TALEND
+- INFORMATICA POWERCENTER
+- APACHE NIFI
 
 ---
 
@@ -81,6 +88,7 @@ Principais ferramentas:
 2. Como aplicamos o Data Mining no dia a dia?
 3. O Tableau trabalha com tempo real? É uma vantagem em cima do Power BI?
 4. Definir melhor o conceito de: ETL, OLAP, Data Mining e Ferramentas de Visualização de Dados
+5. O que seria uma visão "Holistica" de algo?
 
 ---
 
