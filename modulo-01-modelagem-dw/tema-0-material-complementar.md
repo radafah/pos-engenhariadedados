@@ -1,7 +1,5 @@
 # Material Complementar — Ferramentas e Tecnologias para Data Warehouse
 
-> Tema 3 — Leituras e referências complementares ao conteúdo da aula.
-
 ---
 
 ## Livros
